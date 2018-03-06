@@ -1,0 +1,131 @@
+\documentclass[8pt]{extarticle}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[a4paper,landscape,margin=5mm]{geometry}
+\usepackage{xcolor}
+\usepackage{mathtools}
+\usepackage{datatool}
+\usepackage[many]{tcolorbox}
+
+\pagestyle{empty}
+\DTLloaddb{data}{data.csv}
+
+\newcount\cardnrow
+\newcount\cardncol
+
+\cardncol=5
+\cardnrow=6
+
+\newlength{\cardwidth}
+\newlength{\cardheight}
+\newlength{\cardmargin}
+\newlength{\marklength}
+\newlength{\markspacing}
+\newlength{\markwidth}
+
+\setlength{\marklength}{4mm}
+\setlength{\markspacing}{1mm}
+\setlength{\cardmargin}{1mm}
+\setlength{\markwidth}{.5pt}
+
+\cardwidth=\dimexpr\textwidth-2.0\markspacing-2.0\marklength\relax
+\divide \cardwidth by \cardncol
+\advance \cardwidth by \dimexpr-2.0\cardmargin\relax
+
+\cardheight=\dimexpr\textheight-2.0\markspacing-2.0\marklength\relax
+\divide \cardheight by \cardnrow
+\advance \cardheight by \dimexpr-2.0\cardmargin\relax
+
+%\cardncol=\numexpr(\textwidth-2*(\markspacing+\markwidth))/(\cardwidth+2*\cardmargin)\relax
+%\cardnrow=\numexpr(\textheight-2*(\markspacing+\markwidth))/(\cardheight+2*\cardmargin)\relax
+
+\newcount\ter
+\newcount\iter
+\newcount\jter
+\newcount\temp
+
+\def\zzz{red!5!white}
+
+\begin{document}
+\ter=0\relax
+\loop
+{%
+\noindent
+\smash{\rule[-.5\markwidth]{\marklength}{\markwidth}}%
+\hspace{\markspacing}%
+\clap{\rule[\markspacing]{\markwidth}{\marklength}}%
+%
+\iter=0\relax
+\loop
+\advance \iter by 1\relax
+	\hspace{\dimexpr\cardwidth+2\cardmargin\relax}%
+	\clap{\rule[\markspacing]{\markwidth}{\marklength}}%
+\ifnum \iter<\cardncol%
+\repeat%
+\hspace{\markspacing}%
+\smash{\rule[-.5\markwidth]{\marklength}{\markwidth}}\\[\dimexpr\cardmargin-1pt\relax]
+%
+\iter=0\relax%
+\loop 
+\advance \iter by 1\relax
+{%
+	\raisebox{-\cardmargin}[0pt][0pt]{\rule[-0.5\markwidth]{\marklength}{\markwidth}}%
+	\hspace{\markspacing}%
+	\jter=0\relax%
+	\loop 
+	\advance \jter by 1\relax
+	{%
+		\hspace{\cardmargin}%
+		\temp=\numexpr\jter+\cardncol*(\iter-1)+\ter\relax
+		\ifnum \numexpr\temp-1\relax<\DTLrowcount{data}
+			\DTLgetvalue{\EPrefix}{data}{\temp}{\dtlcolumnindex{data}{Prefix}}%
+			\DTLgetvalue{\ETitle}{data}{\temp}{\dtlcolumnindex{data}{Title}}%
+			\DTLgetvalue{\ESuffix}{data}{\temp}{\dtlcolumnindex{data}{Suffix}}%
+			\DTLgetvalue{\EDescription}{data}{\temp}{\dtlcolumnindex{data}{Description}}%
+			\DTLgetvalue{\EPackage}{data}{\temp}{\dtlcolumnindex{data}{Package}}%
+			\DTLgetvalue{\ECount}{data}{\temp}{\dtlcolumnindex{data}{Count}}%
+			\DTLgetvalue{\EFrame}{data}{\temp}{\dtlcolumnindex{data}{Frame}}%
+			\DTLgetvalue{\EBack}{data}{\temp}{\dtlcolumnindex{data}{Back}}%
+			\begin{tcolorbox}[enhanced,text fill,left=1mm,right=1mm,top=1mm,bottom=1mm,colback=\EBack,colframe=\EFrame,width=\cardwidth,height=\cardheight,before=\noindent,after=\noindent,sharp corners=all,space to upper,middle=1mm,bottomtitle=1mm,toptitle=1mm,boxsep=0mm,fonttitle=\bfseries\sffamily\huge,halign title=left, halign=left,valign=top,valign lower=center,boxrule=1pt,segmentation style={solid,line width=1pt},title={\LARGE\EPrefix}\ETitle{\LARGE\ESuffix}]%
+			{\LARGE\sffamily\EDescription\par}
+			\vfill
+			\tcbline
+			{\footnotesize\sffamily\EPackage\hfill\textbf{\ECount}}
+			\end{tcolorbox}%			
+	    \else
+	    	\textcolor{black}{\rule{\cardwidth}{\cardheight}}%
+	    	%\tcboxfit[width=\cardwidth,height=\cardheight,before=\noindent,after=\noindent,sharp corners=all]{%
+			%\number\numexpr\jter+\cardncol*(\iter-1)+\ter\relax%
+			%}%
+	    \fi			
+		\hspace{\cardmargin}%		
+	}%	
+	\ifnum \jter < \cardncol
+	\repeat
+	\hspace{\markspacing}%
+	\ifnum \iter<\numexpr\cardnrow\relax
+		\raisebox{-\cardmargin}[0pt][0pt]{\rule[-0.5\markwidth]{\marklength}{\markwidth}}\\[\dimexpr2.0\cardmargin-1pt\relax]
+	\else
+		\raisebox{-\cardmargin}[0pt][0pt]{\rule[-0.5\markwidth]{\marklength}{\markwidth}}\\[\dimexpr\cardmargin-1pt\relax]
+	\fi
+}%
+\ifnum \iter<\cardnrow
+\repeat
+%
+\iter=0
+\hspace*{\dimexpr\marklength+\markspacing\relax}%
+\rule{0pt}{\dimexpr\marklength+\markspacing\relax}%
+\clap{\rule{\markwidth}{\marklength}}%
+\loop
+\advance \iter 1
+	\hspace{\dimexpr\cardwidth+2\cardmargin\relax}%
+	\clap{\rule{\markwidth}{\marklength}}%
+\ifnum \iter<\cardncol%
+\repeat%
+}%
+\advance \ter by \numexpr\cardnrow*\cardncol\relax
+\ifnum \ter < \DTLrowcount{data}
+\\%
+\repeat%
+\end{document}
