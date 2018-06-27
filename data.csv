@@ -3,16 +3,16 @@ MC1,4001UB,DR2G,UB-suffix series CMOS gates: quad \mbox{2-input} NOR Gate,"16-Le
 CD,40109B,PWR,CMOS quad \mbox{low-to-high} voltage level shifter (20V rating),"16-Lead TSSOP, 4.4 mm",11,brown!25!black,brown!20!white
 MC1,4011UB,DG,UB-suffix series CMOS gates: quad \mbox{2-input} NAND Gate,"16-Lead SOIC, 3.9 mm",10,brown!25!black,brown!20!white
 CD,4012B,M96,CMOS dual \mbox{4-input} NAND gate,"14-Lead SOIC, 3.9 mm",10,brown!25!black,brown!20!white
-MC1,4014B,DG,8-Bit static shift register: synchronous parallel input/serial output,"16-Lead SOIC, 3.9 mm",10,brown!25!black,brown!20!white
+MC1,4014B,DG,8-Bit static shift register: synchronous parallel input\slash serial output,"16-Lead SOIC, 3.9 mm",10,brown!25!black,brown!20!white
 CD,4023B,M96,CMOS triple \mbox{3-input} NAND gate,"14-Lead SOIC, 3.9 mm",10,brown!25!black,brown!20!white
 CD,4048B,PW,CMOS multifunction expandable \mbox{8-input} gate,"16-Lead TSSOP, 4.4 mm",10,brown!25!black,brown!20!white
 MC1,4585B,DG,4-Bit magnitude comparator,"16-Lead SOIC, 3.9 mm",10,brown!25!black,brown!20!white
 M,74HC133,M1R, \mbox{13-Input} NAND gate,"16-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
-SN,74HC157,DR,Quadruple \mbox{2-line} to \mbox{1-line} data selectors/multiplexers,"16-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
+SN,74HC157,DR,Quadruple \mbox{2-line} to \mbox{1-line} data selectors\slash multiplexers,"16-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
 ,74HC175,D,Quad \mbox{D-type} \mbox{flip-flop} with reset; positive-edge trigger,"16-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
-,74HC191,D,Presettable synchronous  \mbox{4-bit} binary  \mbox{up/down} counter,"16-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
+,74HC191,D,Presettable synchronous  \mbox{4-bit} binary  \mbox{up\slash down} counter,"16-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
 CD,74HC283,ME4,High-speed CMOS logic \mbox{4-bit} binary full adder with fast carry,"16-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
-CD,74HC4067,M96,High-speed CMOS logic \mbox{16-channel} analog multiplexer/demultiplexer,"24-Lead SOIC, 7.5 mm",20,brown!75!black,brown!20!white
+CD,74HC4067,M96,High-speed CMOS logic \mbox{16-channel} analog multiplexer\slash demultiplexer,"24-Lead SOIC, 7.5 mm",20,brown!75!black,brown!20!white
 MM,74HCT00,M,Quad \mbox{2-input} NAND gate,"14-Lead SOIC, 3.9 mm",20,brown!50!black,brown!20!white
 SN,74LVC07A,D,Hex buffer and driver with open-drain outputs,"14-Lead SOIC, 3.9 mm",10,red!75!black,red!10!white
 SN,74LVC07A,PWR,Hex buffer and driver with open-drain outputs,"14-Lead TSSOP, 4.4 mm",10,red!75!black,red!10!white
@@ -30,7 +30,7 @@ SN,74LVC4245A,PWR,Octal bus transceiver and \mbox{3.3-V} to \mbox{5-V} shifter w
 ,74VHC595,MTC,8-Bit shift register with output latches,"16-Lead TSSOP, 4.4 mm",10,red!50!black,red!10!white
 ,74VHC86,MTCX,Quad 2-input \mbox{exclusive-OR} gate,"14-Lead TSSOP, 4.4 mm",10,red!50!black,red!10!white
 HEF,4021B,T,8-Bit static shift register; asynchronous parallel data input,"16-Lead SOIC, 3.9 mm",10,brown!25!black,brown!20!white
-HEF,4044B,T,Quadruple R/S latch with \mbox{3-state} outputs,"16-Lead SOIC, 3.9 mm",20,brown!25!black,brown!20!white
+HEF,4044B,T,Quadruple R\slash S latch with \mbox{3-state} outputs,"16-Lead SOIC, 3.9 mm",20,brown!25!black,brown!20!white
 ,74HC109,D,Dual J\={K} \mbox{flip-flop} with set and reset; positive-edge-trigger,"16-Lead SOIC, 3.9 mm",50,brown!75!black,brown!20!white
 MM,74HC132,M,Quad \mbox{2-input} NAND Schmitt trigger,"14-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
 ,74HC173,D,Quad \mbox{D-type} \mbox{flip-flop}; positive-edge trigger; \mbox{3-state},"16-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
@@ -39,23 +39,53 @@ MM,74HC132,M,Quad \mbox{2-input} NAND Schmitt trigger,"14-Lead SOIC, 3.9 mm",10,
 ,74HC30,D,8-Input NAND gate,"14-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
 ,74HC4002,D,Dual \mbox{4-input} NOR gate,"14-Lead SOIC, 3.9 mm",20,brown!75!black,brown!20!white
 TC,74HC4024A,F,7-Stage binary counter,"14-Lead SOIC, 5.3 mm",20,brown!75!black,brown!20!white
-,74HC4040,D,12-Stage binary ripple counter,"16-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
+,74HC4040,D,12-Stage binary ripple counter,"16-Lead SOIC, 3.9 mm",10,,
 CD,74HC4046A,M,High-speed CMOS logic phase-locked loop with VCO,"16-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
 ,74HC4050,D,Hex \mbox{non-inverting} \mbox{HIGH-to-LOW} level shifter,"16-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
 CD,74HC4050,M96,"High-speed CMOS logic hex buffers, inverting and non-inverting","16-Lead SOIC, 3.9 mm",6,brown!75!black,brown!20!white
-,74HC4051,D,8-Channel analog multiplexer/demultiplexer,"16-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
-,74HC4052,D,Dual 4-channel analog multiplexer/demultiplexer,"16-Lead SOIC, 3.9 mm",40,brown!75!black,brown!20!white
-,74HC4053,D,Triple 2-channel analog multiplexer/demultiplexer,"16-Lead SOIC, 3.9 mm",30,brown!75!black,brown!20!white
+,74HC4051,D,8-Channel analog multiplexer\slash demultiplexer,"16-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
+,74HC4052,D,Dual 4-channel analog multiplexer\slash demultiplexer,"16-Lead SOIC, 3.9 mm",40,brown!75!black,brown!20!white
+,74HC4053,D,Triple 2-channel analog multiplexer\slash demultiplexer,"16-Lead SOIC, 3.9 mm",30,brown!75!black,brown!20!white
 SN,74HC4060,DR,14-Stage asynchronous binary counter and oscillator,"16-Lead SOIC, 3.9 mm",5,brown!75!black,brown!20!white
 ,74HC4060,D,14-Stage binary ripple counter with oscillator,"16-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
 ,74HC4094,D,8-Stage \mbox{shift-and-store} bus register,"16-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
-,74HC4514,D,4-To-16 line decoder/demultiplexer with input latches,"24-Lead SOIC, 7.5 mm",10,brown!75!black,brown!20!white
-,74HC4514,D,Dual retriggerable precision monostable multivibrator,"16-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
+,74HC4514,D,4-To-16 line decoder\slash demultiplexer with input latches,"24-Lead SOIC, 7.5 mm",10,brown!75!black,brown!20!white
+,74HC4538,D,Dual retriggerable precision monostable multivibrator,"16-Lead SOIC, 3.9 mm",10,,
 M,74HC590,RM13TR,8-Bit binary counter register with \mbox{3-state} output,"16-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
-TC,74HC7240A,F,"Octal bus buffer (with Schmitt trigger inputs), inverted, \mbox{3-state} outputs","20-Lead SOIC, 5.3 mm",10,brown!75!black,brown!20!white
+TC,74HC7240A,F,"Octal bus buffer (with Schmitt trigger inputs), inverted, \mbox{3-state} outputs","20-Lead SOIC, 5.3 mm",10,,
 ,74HCT112,D,Dual JK \mbox{flip-flop} with set and reset; negative-edge trigger,"16-Lead SOIC, 3.9 mm",10,brown!50!black,brown!20!white
-CD,74HCT4067,M,High-speed CMOS logic \mbox{16-channel} analog multiplexer/demultiplexer,"24-Lead SOIC, 7.5 mm",5,brown!50!black,brown!20!white
+CD,74HCT4067,M,High-speed CMOS logic \mbox{16-channel} analog multiplexer\slash demultiplexer,"24-Lead SOIC, 7.5 mm",5,brown!50!black,brown!20!white
 MM,74HCT74,M,Dual \mbox{D-type} \mbox{flip-flop} with preset and clear,"14-Lead SOIC, 3.9 mm",10,brown!50!black,brown!20!white
 ,74LVC1G74,DP,Single \mbox{D-type} \mbox{flip-flop} with set and reset; positive edge trigger,"8-Lead TSSOP, 3 mm",10,red!75!black,red!10!white
 ,74VHC4040,FT,12-Stage ripple carry binary counter,"16-Lead TSSOP, 4.4 mm",10,red!50!black,red!10!white
 TC,74VHCT541A,FT,"Octal bus buffer, non-inverted, \mbox{3-state} outputs","20-Lead TSSOP, 4.4 mm",10,red!37!black,red!10!white
+,74HC4040,D,12-Stage binary ripple counter,"16-Lead SOIC, 3.9 mm",20,brown!75!black,brown!20!white
+TC,74HC7240A,F,"Octal bus buffer (with Schmitt trigger inputs), inverted, \mbox{3-state} outputs","20-Lead SOIC, 5.3 mm",20,brown!75!black,brown!20!white
+,74HC4538,D,Dual retriggerable precision monostable multivibrator,"16-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
+MC,74HC1G32,DFT2G,Single 2-input OR gate,"5-Lead SC-70, 1.25 mm",20,brown!75!black,brown!20!white
+MC,74HC4851A,DG,Analog multiplexers\slash demultiplexers with injection current effect control,"16-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
+MC,74HC589A,DG,8-Bit serial or parallel-input\slash serial-output shift register with 3-state output,"16-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
+M,74HC139,M1R,Dual 2 to 4 decoder\slash demultiplexer,"16-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
+M,74HC390,RM13TR,Dual decade counter,"16-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
+,74HC237,D,"3-To-8 line decoder, demultiplexer with address latches","16-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
+CD,4028B,M96,CMOS BCD-to-decimal or binary-to-octal decoders\slash drivers,"16-Lead SOIC, 3.9 mm",10,brown!25!black,brown!20!white
+CD,4511B,M,CMOS BCD-to-7-segment LED latch decoder drivers,"16-Lead SOIC, 3.9 mm",40,brown!25!black,brown!20!white
+CD,4518B,M96,CMOS dual BCD up-counter ,"16-Lead SOIC, 3.9 mm",10,brown!25!black,brown!20!white
+CD,4520B,M,CMOS dual binary up-counter,"16-Lead SOIC, 3.9 mm",10,brown!25!black,brown!20!white
+CD,4541B,M96,CMOS programmable timer; high voltage types (20V rating),"14-Lead SOIC, 3.9 mm",10,brown!25!black,brown!20!white
+CD,4543B,M96,CMOS BCD-to-seven-segment latch\slash decoder\slash driver for liquid-crystal displays,"16-Lead SOIC, 3.9 mm",10,brown!25!black,brown!20!white
+CD,4094B,M,CMOS 8-stage shift-and-store bus register ,"16-Lead SOIC, 3.9 mm",10,brown!25!black,brown!20!white
+HEF,4528B,T,Dual monostable multivibrator,"16-Lead SOIC, 3.9 mm",10,brown!25!black,brown!20!white
+CD,4017B,M96,CMOS decade counter with 10 decoded outputs ,"16-Lead SOIC, 3.9 mm",20,brown!25!black,brown!20!white
+MC1,4543B,DG,BCD-to-seven segment latch\slash decoder\slash driver for liquid crystals,"16-Lead SOIC, 3.9 mm",10,brown!25!black,brown!20!white
+MC1,4521B,DG,24-Stage frequency divider,"16-Lead SOIC, 3.9 mm",10,brown!25!black,brown!20!white
+CD,4053B,PW,CMOS triple 2-channel analog multiplexer\slash demultiplexer with logic-level conversion,"16-Lead TSSOP, 4.4 mm",2,brown!25!black,brown!20!white
+CD1,4538B,PW,CMOS dual precision monostable multivibrator,"16-Lead TSSOP, 4.4 mm",1,brown!25!black,brown!20!white
+CD,4046B,PW,CMOS micropower phase-locked loop ,"16-Lead TSSOP, 4.4 mm",5,brown!25!black,brown!20!white
+,CBT3253A,D,Dual 1-of-4 FET multiplexer\slash demultiplexer,"16-Lead SOIC, 3.9 mm",10,pink!50!red,pink!10!white
+,CBT3257A,D,Quad 1-of-2 multiplexer\slash demultiplexer,"16-Lead SOIC, 3.9 mm",20,pink!50!red,pink!10!white
+SN,74CB3Q3253,PWR,Dual 1-of-4 FET multiplexer\slash demultiplexer,"16-Lead TSSOP, 4.4 mm",10,pink!50!red,pink!10!white
+SN,74LV4046A,PW,High-speed CMOS logic phase-locked loop with VCO,"16-Lead TSSOP, 4.4 mm",22,orange!75!black,orange!10!white
+SN,74LV4040A,PW,12-Bit asynchronous binary counter,"16-Lead TSSOP, 4.4 mm",3,orange!75!black,orange!10!white
+SN,74LVC1G58,DCKR,Configurable multiple-function gate,"6-Lead SC-70, 1.25 mm",50,red!75!black,red!10!white
+SN,74LVC1G57,DCKR,Configurable multiple-function gate,"6-Lead SC-70, 1.25 mm",50,red!75!black,red!10!white

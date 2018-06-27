@@ -87,12 +87,16 @@
 			\DTLgetvalue{\ECount}{data}{\temp}{\dtlcolumnindex{data}{Count}}%
 			\DTLgetvalue{\EFrame}{data}{\temp}{\dtlcolumnindex{data}{Frame}}%
 			\DTLgetvalue{\EBack}{data}{\temp}{\dtlcolumnindex{data}{Back}}%
-			\begin{tcolorbox}[enhanced,text fill,left=1mm,right=1mm,top=1mm,bottom=1mm,colback=\EBack,colframe=\EFrame,width=\cardwidth,height=\cardheight,before=\noindent,after=\noindent,sharp corners=all,space to upper,middle=1mm,bottomtitle=1mm,toptitle=1mm,boxsep=0mm,fonttitle=\bfseries\sffamily\huge,halign title=left, halign=left,valign=top,valign lower=center,boxrule=1pt,segmentation style={solid,line width=1pt},title={\LARGE\EPrefix}\ETitle{\LARGE\ESuffix}]%
-			{\LARGE\sffamily\EDescription\par}
-			\vfill
-			\tcbline
-			{\footnotesize\sffamily\EPackage\hfill\textbf{\ECount}}
-			\end{tcolorbox}%			
+			\if\EBack\relax
+				\textcolor{black}{\rule{\cardwidth}{\cardheight}}%
+			\else
+				\begin{tcolorbox}[enhanced,text fill,left=1mm,right=1mm,top=1mm,bottom=1mm,colback=\EBack,colframe=\EFrame,width=\cardwidth,height=\cardheight,before=\noindent,after=\noindent,sharp corners=all,space to upper,middle=1mm,bottomtitle=1mm,toptitle=1mm,boxsep=0mm,fonttitle=\bfseries\sffamily\huge,halign title=left, halign=left,valign=top,valign lower=center,boxrule=1pt,segmentation style={solid,line width=1pt},title={\LARGE\EPrefix}\ETitle{\LARGE\ESuffix}]%
+				{\LARGE\sffamily\EDescription\par}%
+				\vfill%
+				\tcbline%
+				{\footnotesize\sffamily\EPackage\hfill\textbf{\ECount}}%
+				\end{tcolorbox}%			
+			\fi
 	    \else
 	    	\textcolor{black}{\rule{\cardwidth}{\cardheight}}%
 	    	%\tcboxfit[width=\cardwidth,height=\cardheight,before=\noindent,after=\noindent,sharp corners=all]{%
