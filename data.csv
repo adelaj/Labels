@@ -97,7 +97,7 @@ SN,74LVC125A,PWR,Quadruple bus buffer gate with 3-state outputs,"14-Lead TSSOP, 
 SN,74LV161A,PWR,4-Bit synchronous binary counters,"16-Lead TSSOP, 4.4 mm",50,orange!75!black,orange!10!white
 SN,74LV164A,PW,8-Bit parallel-out serial shift registers,"14-Lead TSSOP, 4.4 mm",10,orange!75!black,orange!10!white
 HD,74LV14A,TELL,Hex Schmitt-trigger inverters,"14-Lead TSSOP, 4.4 mm",10,orange!75!black,orange!10!white
-,74HCT257,D,Quad 2-input multiplexer; \mbox{3-state},"16-Lead SOIC, 3.9 mm",10,brown!50!black,brown!20!white
+,74HCT257,D,Quad 2-input multiplexer; \mbox{3-state},"16-Lead SOIC, 3.9 mm",20,brown!50!black,brown!20!white
 ,74HCT139,D,Dual 2-to-4 line decoder\slash demultiplexer,"16-Lead SOIC, 3.9 mm",14,brown!50!black,brown!20!white
 MC1,4175B,DR2G,Quad type D flip-flop,"16-Lead SOIC, 3.9 mm",20,brown!25!black,brown!20!white
 MC1,4528B,D,Dual monostable multivibrator,"16-Lead SOIC, 3.9 mm",10,brown!25!black,brown!20!white
@@ -134,7 +134,7 @@ SN,74LVC1G08,DBVR,Single 2-input positive-AND gate,"5-Lead SOT-23, 1.6 mm",20,re
 SN,74LVC1G175,DBVR,Single D-type flip-flop with asynchronous clear,"6-Lead SOT-23, 1.6 mm",20,red!75!black,red!10!white
 SN,74LVC2G14,DBVR,Dual Schmitt-trigger inverter,"6-Lead SOT-23, 1.6 mm",20,red!75!black,red!10!white
 SN,74LVC2G17,DCKR,Dual Schmitt-trigger buffer,"6-Lead SC-70, 1.25 mm",20,red!75!black,red!10!white
-SN,74LVC2T45,DCUR,Dual-bit dual-supply bus transceiver with configurable voltage translation,"8-Lead VSSOP, 3 mm",15,red!75!black,red!10!white
+SN,74LVC2T45,DCUR,Dual-bit dual-supply bus transceiver with configurable voltage translation,"8-Lead VSSOP, 2.3 mm",15,red!75!black,red!10!white
 ,74AHC1G79,GW,Single D-type flip-flop; positive-edge trigger,"5-Lead SC-70, 1.25 mm",50,red!50!black,red!10!white
 ,74LVC4066,D,Quad bilateral switch,"14-Lead SOIC, 3.9 mm",20,red!75!black,red!10!white
 ,74AC86,SC,Quad 2-input exclusive-OR gate,"14-Lead SOIC, 3.9 mm",20,magenta!75!black,magenta!15!white
@@ -151,6 +151,39 @@ DV,74ACT241,D,Octal buffer\slash line driver with 3-state outputs,"20-Lead SOIC,
 ,74ACT11020,D,Dual 4-input \mbox{positive-NAND} gates,"14-Lead SOIC, 3.9 mm",10,magenta!50!black,magenta!25!white
 ,74ACT11032,D,Quadruple 2-input \mbox{positive-OR} gates,"16-Lead SOIC, 3.9 mm",10,magenta!50!black,magenta!25!white
 ,74ACT11157,DW,Quadruple 2-line to 1-line data selectors\slash multiplexers,"20-Lead SOIC, 7.5 mm",10,magenta!50!black,magenta!25!white
-,74ACT11191,DW, synchronous 4-bit up\slash down binary counter,"20-Lead SOIC, 7.5 mm",3,magenta!50!black,magenta!25!white
+,74ACT11191,DW,Synchronous 4-bit up\slash down binary counter,"20-Lead SOIC, 7.5 mm",3,magenta!50!black,magenta!25!white
+,74AC74,MTCX,Dual D-type positive edge-triggered flip-flop,"14-Lead SOIC, 3.9 mm",10,magenta!75!black,magenta!15!white
 TC,74VHC14,FT,Hex Schmitt inverter,"14-Lead TSSOP, 4.4 mm",10,red!50!black,red!10!white
 ,74VHC175,M,Quad D-type flip-flop,"16-Lead SOIC, 3.9 mm",20,red!50!black,red!10!white
+MC1,4569B,DW,Programmable divide-by-N dual 4-bit binary\slash BCD down counter,"16-Lead SOIC, 7.5 mm",10,brown!25!black,brown!20!white
+CD,4077B,M,CMOS quad exclusive-NOR gate,"14-Lead SOIC, 3.9 mm",20,brown!25!black,brown!20!white
+CD,4030B,M,CMOS quad exclusive-OR gate ,"14-Lead SOIC, 3.9 mm",10,brown!25!black,brown!20!white
+CD,4016B,CM,Quad bilateral switch,"14-Lead SOIC, 3.9 mm",10,brown!25!black,brown!20!white
+SN,74CBT3125,D,Quadruple FET bus switch,"14-Lead SOIC, 3.9 mm",10,pink!50!red,pink!10!white
+,74LVC257A,PW,Quad 2-input multiplexer with 5 V tolerant inputs\slash outputs; 3-state,"16-Lead TSSOP, 4.4 mm",5,red!75!black,red!10!white
+MC1,4007UB,DG,Dual complementary pair plus inverter,"14-Lead SOIC, 3.9 mm",10,brown!25!black,brown!20!white
+MC1,4559B,DW,Successive approximation registers,"16-Lead SOIC, 7.5 mm",5,brown!25!black,brown!20!white
+MC1,4516B,DG,Binary up\slash down counter,"16-Lead SOIC, 3.9 mm",10,brown!25!black,brown!20!white
+MC1,4029B,DG,Binary\slash decade up\slash down counter,"16-Lead SOIC, 3.9 mm",10,brown!25!black,brown!20!white
+,74HC238,D,3-To-8 line decoder\slash demultiplexer,"16-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
+M,74HC147,RM13TR,10-To-4 line priority encoder,"16-Lead SOIC, 3.9 mm",10,brown!75!black,brown!20!white
+,74HCT4002,D,Dual 4-input NOR gate,"14-Lead SOIC, 3.9 mm",7,brown!50!black,brown!20!white
+,74VHCT14A,MTC,Hex Schmitt inverter,"14-Lead TSSOP, 4.4 mm",20,red!37!black,red!10!white
+IN,74AC244,DW,Octal 3-state noninverting buffer\slash Line driver\slash line receiver,"20-Lead SOIC, 7.5 mm",6,magenta!75!black,magenta!15!white
+{\Large SN},{\LARGE 74AHCT1G125},{\Large DBVR},Single bus buffer gate with \mbox{3-state} output,"5-Lead SOT-23, 1.6 mm",20,red!37!black,red!10!white
+,74VHCT573A,MTC,Octal D-type latch with \mbox{3-state} outputs,"20-Lead TSSOP, 4.4 mm",10,red!37!black,red!10!white
+SN,74LVC126A,PWR,Quadruple bus buffer gate with \mbox{3-state} outputs,"14-Lead TSSOP, 4.4 mm",10,red!75!black,red!10!white
+,74LVC2G125,DP,Dual bus buffer\slash line driver; \mbox{3-state},"8-Lead TSSOP, 3 mm",15,red!75!black,red!10!white
+SN,74LVC2G74,DCTR,Single positive-edge-triggered D-type flip-flop with clear and preset,"8-Lead TSSOP, 2.8 mm",15,red!75!black,red!10!white
+,74LVC00A,PW,Quad 2-input NAND gate,"14-Lead TSSOP, 4.4 mm",20,red!75!black,red!10!white
+,74LVC1G32,GW,Single 2-input OR gate,"5-Lead SC-70, 1.25 mm",20,red!75!black,red!10!white
+,74LVC109,D,Dual J\={K} flip-flop with set and reset; positive-edge trigger,"16-Lead SOIC, 3.9 mm",10,red!75!black,red!10!white
+,74LVC1G97,GW,Low-power configurable multiple function gate,"6-Lead SC-70, 1.25 mm",50,red!75!black,red!10!white
+,74HCT03,D,Quad 2-input NAND gate; open-drain output,"14-Lead SOIC, 3.9 mm",10,brown!50!black,brown!20!white
+MM,74HCT164,MX,8-Bit serial-in\slash parallel-out shift register,"14-Lead SOIC, 3.9 mm",20,brown!50!black,brown!20!white
+MM,74HCT08,MTC,Quad 2-input AND gate,"14-Lead TSSOP, 4.4 mm",20,brown!50!black,brown!20!white
+,74HCT08,D,Quad 2-input AND gate,"14-Lead SOIC, 3.9 mm",20,brown!50!black,brown!20!white
+,74HCT02,D,Quad 2-input NOR gate,"14-Lead SOIC, 3.9 mm",20,brown!50!black,brown!20!white
+CD,74HCT238,M,High-speed CMOS logic 3- to 8-line decoder\slash demultiplexer noninverting,"16-Lead SOIC, 3.9 mm",5,brown!50!black,brown!20!white
+MM,74HC373,WMX,3-State octal D-type latch,"20-Lead SOIC, 7.5 mm",10,brown!75!black,brown!20!white
+N,74F07,D,Inverter\slash buffer drivers,"14-Lead SOIC, 3.9 mm",10,black!95!white,black!20!white
